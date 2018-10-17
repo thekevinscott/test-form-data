@@ -26,18 +26,18 @@ class App extends Component {
 
   render() {
     /* failing to set a value fails the test */
-    // return (
-    //   <form ref={this.formRef}>
-    //     <input type="text" name="foo" />
-    //   </form>
-    // );
-
-    /* setting an explicit value passes the test */
     return (
       <form ref={this.formRef}>
-        <input type="text" name="foo" defaultValue="foo-bar" />
+        <input type="text" name="foo" />
       </form>
     );
+
+    /* setting an explicit value passes the test */
+    // return (
+    //   <form ref={this.formRef}>
+    //     <input type="text" name="foo" defaultValue="foo-bar" />
+    //   </form>
+    // );
   }
 }
 
